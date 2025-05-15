@@ -1,0 +1,117 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .note-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .note-input textarea {
+    width: 300px;
+    height: 80px;
+    resize: none;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fffecb;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+  }
+  
+  .note-input button {
+    font-size: 28px;
+    padding: 10px 20px;
+    background-color: #b7ffaf;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+  }
+  
+  .note-input button:hover {
+    background-color: #90ee90;
+  }
+  
+  .notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .note {
+    position: relative;
+    width: 200px;
+    min-height: 100px;
+    padding: 15px 15px 10px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #fffecb;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .note:nth-child(4n+1) {
+    background-color: #fffecb; /* pastel yellow */
+  }
+  
+  .note:nth-child(4n+2) {
+    background-color: #c7f9cc; /* pastel green */
+  }
+  
+  .note:nth-child(4n+3) {
+    background-color: #a0e7e5; /* pastel blue */
+  }
+  
+  .note p {
+    margin: 0;
+    word-wrap: break-word;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #ff7f7f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px 6px;
+  }
+  
+  .delete-btn:hover {
+    background: #ff4c4c;
+  }
+  
