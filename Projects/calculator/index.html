@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="calculator">
+    <div id="display">0</div>
+    <div class="buttons-grid">
+      <!-- Row 1 -->
+      <button class="action-btn" data-action="clear">C</button>
+      <button class="action-btn" data-action="delete">Del</button>
+      <button class="action-btn" data-action="remainder">%</button>
+      <button class="action-btn" data-action="exponent">Exp</button>
+      
+      <!-- Row 2 -->
+      <button class="num-btn" data-num="7">7</button>
+      <button class="num-btn" data-num="8">8</button>
+      <button class="num-btn" data-num="9">9</button>
+      <button class="op-btn" data-op="divide">÷</button>
+      
+      <!-- Row 3 -->
+      <button class="num-btn" data-num="4">4</button>
+      <button class="num-btn" data-num="5">5</button>
+      <button class="num-btn" data-num="6">6</button>
+      <button class="op-btn" data-op="multiply">×</button>
+      
+      <!-- Row 4 -->
+      <button class="num-btn" data-num="1">1</button>
+      <button class="num-btn" data-num="2">2</button>
+      <button class="num-btn" data-num="3">3</button>
+      <button class="op-btn" data-op="subtract">-</button>
+      
+      <!-- Row 5 -->
+      <button class="num-btn" data-num="0">0</button>
+      <button class="num-btn" data-num=".">.</button>
+      <button id="equals-btn" class="action-btn" data-action="equals">=</button>
+      <button class="op-btn" data-op="add">+</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

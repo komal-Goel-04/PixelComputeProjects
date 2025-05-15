@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>To-Do List</h1>
+      <input type="text" id="search" placeholder="Search tasks...">
+    </header>
+
+    <div id="alert" class="alert hidden">
+      <span id="alertMessag">Please fill in all fields</span>
+      <button id="closeAlert">&times;</button>
+    </div>
+
+    <form id="taskForm" class="form">
+      <input type="text" id="taskInput" placeholder="Add your to-do task...">
+      <input type="date" id="dateInput">
+      <input type="time" id="timeInput">
+      <button type="submit" id="addTaskBtn">Add Task</button>
+    </form>
+
+    <div id="taskContainer">
+      <div id="dueTasks">
+        <h2 class="task-header">Due Tasks</h2>
+        <div id="dueList"></div>
+      </div>
+      <div id="upcomingTasks">
+        <h2 class="task-header">Upcoming Tasks</h2>
+        <div id="upcomingList"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
