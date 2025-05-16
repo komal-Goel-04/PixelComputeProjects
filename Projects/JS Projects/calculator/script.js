@@ -98,21 +98,21 @@ document.addEventListener("DOMContentLoaded", () => {
       justCalculated = true;
     }
   
-    // Number button clicks
+
     numButtons.forEach(button => {
       button.addEventListener("click", () => {
         appendNumber(button.dataset.num);
       });
     });
   
-    // Operation button clicks
+
     opButtons.forEach(button => {
       button.addEventListener("click", () => {
         chooseOperation(button.dataset.op);
       });
     });
   
-    // Action buttons: Clear, Delete, Equals, Remainder, Exponent handled here
+
     actionButtons.forEach(button => {
       const action = button.dataset.action;
       button.addEventListener("click", () => {
