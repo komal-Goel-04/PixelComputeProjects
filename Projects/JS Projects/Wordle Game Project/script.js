@@ -1,10 +1,4 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     const board = document.getElementById("board");
-//     const input = document.getElementById("guess-input");
-//     const button = document.getElementById("submit-btn");
-//     const feedback = document.getElementById("feedback");
-  
-//     // Replace this with your own 600-word array
+
     const words = [
         "which", "there", "their", "about", "would", "these", "other", "words", "could", "write", "first", "water", 
         "after", "where", "right", "think", "three", "years", "place", "sound", "great", "again", "still", "every", 
@@ -143,8 +137,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("submit-btn");
     const feedback = document.getElementById("feedback");
   
-    // Replace this with your array of 600 words
-    // const words = ["apple", "brave", "chair", "delta", "eagle"];
     const wordToGuess = words[Math.floor(Math.random() * words.length)].toLowerCase();
 
     console.log(wordToGuess);
@@ -169,22 +161,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const evaluateGuess = (guess, target) => {
       const result = Array(5).fill("absent");
   
-      // Step 1: mark yellow if character is correct and in correct position
       for (let i = 0; i < 5; i++) {
         if (guess[i] === target[i]) {
-          result[i] = "present"; // your yellow condition
+          result[i] = "present"; 
         }
       }
   
-      // Step 2: mark green if character is in word but not in correct position
       for (let i = 0; i < 5; i++) {
         if (result[i] === "absent" && target.includes(guess[i])) {
-          // also ensure it's not already marked yellow elsewhere
+
           let countInTarget = [...target].filter(c => c === guess[i]).length;
           let alreadyCounted = result.filter((r, idx) => guess[idx] === guess[i] && r !== "absent").length;
   
           if (alreadyCounted < countInTarget) {
-            result[i] = "correct"; // your green condition
+            result[i] = "correct"; 
           }
         }
       }
