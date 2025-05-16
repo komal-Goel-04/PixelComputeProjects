@@ -96,7 +96,7 @@ body {
   
   /* Layout containers */
   .layout, .container {
-    margin-left: 200px; /* To accommodate fixed sidebar */
+    margin-left: 200px; 
     padding: 20px;
     box-sizing: border-box;
     
